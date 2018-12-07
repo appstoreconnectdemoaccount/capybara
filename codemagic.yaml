@@ -1,0 +1,22 @@
+build_steps:
+  building:
+  - cd $BUILD_DIR
+  - flutter build apk --debug
+  - flutter build ios --debug
+  publishing:
+    emails:
+    - andrjuwkoy@gmail.com
+    slack:
+      channel: '#dev-slack-publishing'
+      notify_build_failed: true
+      notify_build_started: true
+      publish_artifacts: true
+  testing:
+  - cd $BUILD_DIR
+  - flutter test
+flutter_version: stable
+is_configured: true
+platforms:
+- android
+- ios
+xcode_version: latest
