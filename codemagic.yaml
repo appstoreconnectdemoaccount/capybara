@@ -5,7 +5,7 @@ build_steps:
   - flutter build ios --debug
   publishing:
     emails:
-    - example@example.com
+    - example@examaple.com
     slack:
       channel: '#dev-slack-publishing'
       notify_build_failed: true
