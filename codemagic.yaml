@@ -2,7 +2,7 @@ flutter_version: stable
 is_configured: true
 pipeline_steps:
   building:
-  - echo $BUILD_DIR
+  - cd $BUILD_DIR
   - flutter build apk --debug
   - flutter build ios --debug
   publishing:
