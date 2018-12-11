@@ -4,7 +4,7 @@ pipeline_steps:
   building:
   - cd $BUILD_DIR
   - flutter build apk --debug
-  - flutter build ios --debug
+  - flutter build ios --debug --no-codesign
   publishing:
     emails:
     - andrjuwkoy@gmail.com
